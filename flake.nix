@@ -15,7 +15,7 @@
       system:
         import nixpkgs {
           inherit system;
-          overlays = [self.overlay];
+          overlays = [self.overlays.default];
         }
     );
   in {
