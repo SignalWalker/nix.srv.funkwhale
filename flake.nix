@@ -19,7 +19,7 @@
         }
     );
   in {
-    overlay = final: prev: {
+    overlays.default = final: prev: {
       funkwhale-front = with final;
         stdenv.mkDerivation {
           pname = "funkwhale-front";
